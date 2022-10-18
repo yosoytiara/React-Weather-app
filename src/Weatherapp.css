@@ -1,0 +1,141 @@
+h1,
+h5 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 25px;
+  margin-top: 30px;
+  font-weight: bolder;
+  text-shadow: 2px 2px 5px white;
+}
+body {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.day {
+  font-size: 10px;
+  text-align: center;
+  opacity: 0.6;
+  color: white;
+}
+.desc {
+  text-align: center;
+  margin-top: -15px;
+  font-size: 11px;
+}
+hr {
+  margin-top: 10px;
+}
+img {
+  display: block;
+  margin: 0 auto;
+}
+.city-input {
+  border: 2px solid #000000;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+  background-color: rgb(255, 255, 255);
+  font-size: 10px;
+  padding-bottom: 14px;
+}
+
+.submitt {
+  border: 2px solid #000000;
+
+  background-color: black;
+
+  font-size: 10px;
+  padding-bottom: 14px;
+}
+.weather-app {
+  border: 2px solid black;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 800px;
+
+  height: 600px;
+
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(37, 145, 251, 0.98) 0.1%,
+    rgba(0, 7, 128, 1) 99.8%
+  );
+}
+
+.button {
+  border: 2px solid #000000;
+
+  background-color: white;
+  margin-left: -20px;
+}
+
+.button:hover {
+  color: rgb(255, 209, 24);
+}
+
+.float-left {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.temp {
+  font-size: 70px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  display: block;
+  margin-right: 30px;
+  text-shadow: 2px 2px 5px rgb(255, 250, 114);
+}
+.top-row {
+  border: 2px solid #000000;
+  border-top: 1px solid rgb(0, 0, 0);
+  padding-bottom: 0;
+  margin-top: -25px;
+  margin-bottom: 0px;
+  border-bottom: 1px solid #000000;
+  background-color: #db94ff;
+  display: block;
+  text-align: right;
+}
+
+.weather-forecast {
+  text-align: center;
+  background: rgb(255, 241, 255);
+  border-radius: 15px;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 241, 255, 1) 24%,
+    rgba(253, 255, 255, 1) 100%
+  );
+  border: 2px solid #000000;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+}
+
+.weather-forecast-temperatures {
+  font-size: 10px;
+  margin-top: 20px;
+  color: #000000;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.6;
+}
+small {
+  font-size: 8px;
+  font-weight: bolder;
+  display: block;
+  margin-top: 10px;
+}
+small a {
+  color: rgb(29, 146, 255);
+  font-weight: thin;
+}
+h5 {
+  font-size: 5px;
+  text-align: left;
+}
+a:hover {
+  color: rgb(255, 179, 16);
+}
