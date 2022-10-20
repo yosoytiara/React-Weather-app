@@ -26,7 +26,7 @@ export default function WeatherApp() {
             <input
               type="submit"
               value="Search"
-              className="form-control btn btn-outline-light submitt"
+              className="form-control btn btn-light submitt"
             />
           </div>
           <div class="col-1">
