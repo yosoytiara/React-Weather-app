@@ -56,7 +56,7 @@ img {
   border: 2px solid #d8bdff;
   border-top: 3px solid rgb(244, 210, 255);
   border-left: 3px solid rgb(235, 198, 255);
-  background-color: rgb(255, 238, 187);
+  background-color: rgb(9, 121, 18);
 }
 
 .button {
@@ -79,7 +79,7 @@ img {
 .temp {
   font-size: 70px;
   text-align: left;
-  color: rgb(0, 0, 0);
+  color: white;
   display: block;
   margin-right: 30px;
   text-shadow: 2px 2px 5px rgb(255, 250, 114);
@@ -106,7 +106,7 @@ img {
 .weather-forecast-temperatures {
   font-size: 10px;
   margin-top: 20px;
-  color: #000000;
+  color: white;
 }
 
 .weather-forecast-temperature-min {
@@ -117,14 +117,16 @@ small {
   font-weight: bolder;
   display: block;
   margin-top: 10px;
+  color: white;
 }
 small a {
-  color: rgb(15, 3, 17);
+  color: white;
   font-weight: thin;
 }
 h5 {
   font-size: 5px;
   text-align: left;
+  color: white;
 }
 a:hover {
   color: rgb(255, 179, 16);
