@@ -1,8 +1,7 @@
 import React from "react";
 import Footer from "./Footer";
-
-import Forecast from "./Forecast";
 import FormattedDate from "./FormattedDate";
+import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherInfo(props) {
   return (
@@ -25,7 +24,7 @@ export default function WeatherInfo(props) {
         {props.data.description}
       </p>
       <div className="icons">
-        <img src="" alt="Clear" id="icon" width="150" />
+        <WeatherIcon code={props.data.icon} size={52} />
       </div>
       <div className="H-W">
         <span className="hu">
@@ -39,7 +38,6 @@ export default function WeatherInfo(props) {
       </div>
       <br />
 
-      <Forecast />
       <Footer />
     </div>
   );
