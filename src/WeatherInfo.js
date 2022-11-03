@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "./Footer";
+
 import FormattedDate from "./FormattedDate";
 import WeatherTemp from "./WeatherTemp";
 import WeatherIcon from "./WeatherIcon";
@@ -13,6 +13,9 @@ export default function WeatherInfo(props) {
         <FormattedDate date={props.data.date} />
       </p>
       <div className="MainTemp">
+        <div className="icons">
+          <WeatherIcon code={props.data.icon} size={120} />
+        </div>
         <div className="float-left">
           <span className="units" id="temps"></span>
 
@@ -21,12 +24,11 @@ export default function WeatherInfo(props) {
           </span>
         </div>
       </div>
+
       <p className="desc" id="description">
         {props.data.description}
       </p>
-      <div className="icons">
-        <WeatherIcon code={props.data.icon} size={52} />
-      </div>
+
       <div className="H-W">
         <span className="hu">
           Humidity:<span id="humidity"> {props.data.humidity}</span> %
@@ -38,8 +40,6 @@ export default function WeatherInfo(props) {
         </span>
       </div>
       <br />
-
-      <Footer />
     </div>
   );
 }

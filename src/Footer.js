@@ -10,14 +10,9 @@ export default function Footer() {
           target="_blank"
           rel="noreferrer"
         >
-          Open-souce code
+          Open-souce
         </a>
-        by Tiara Dillard
-      </small>
-      <small>
-        <a href="https://www.flaticon.com/free-icons/cloud" title="cloud icons">
-          Icons created by Freepik - Flaticon
-        </a>
+        code by Tiara Dillard
       </small>
     </div>
   );
