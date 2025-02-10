@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import WeatherApp from './WeatherApp';
+import WeatherApp from './Weatherapp';
 
 
 class WeatherWidget extends HTMLElement {
