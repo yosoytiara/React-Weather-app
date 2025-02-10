@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import WeatherApp from './Weatherapp';
-
+import WeatherApp from '../src/Weatherapp';
 
 class WeatherWidget extends HTMLElement {
   connectedCallback() {

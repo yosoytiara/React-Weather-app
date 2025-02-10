@@ -1,5 +1,5 @@
 {
-  "name": "Weather Widget",
+  "name": "weather-widget",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "parcel build src/WeatherWidget.js --public-url ./",
+    "build": "parcel build public/WeatherWidget.js --public-url ./",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
