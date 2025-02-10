@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
-import Forecast from "./Forecast";
+// import Forecast from "./Forecast";
 import Footer from "./Footer";
 import axios from "axios";
-import "./Weatherapp.css";
+
 
 export default function WeatherApp(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -31,41 +31,41 @@ export default function WeatherApp(props) {
     setCity(event.target.value);
   }
   function search() {
-    const apiKey = "2daf65f0cdaa917f11026e8a128ce271";
+    const apiKey = "b262154b2d4d3113da298dca71b99a47";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
   if (weatherData.ready) {
     return (
-      <div className="weather-app" id="weatherapp">
-        <form className="search-form" id="search-form" onSubmit={handleSubmit}>
-          <div className="row">
-            <div className="col-sm-8">
+      <div className='weather-app' id='WeatherApp'>
+        <form className='search-form' id='search-form' onSubmit={handleSubmit}>
+          <div className='row'>
+            <div className='col-sm-8'>
               <input
-                type="search"
-                placeholder="Type a city.."
-                autofocus="on"
-                autocomplete="off"
-                id="city-input"
+                type='search'
+                placeholder='Type a city..'
+                autoFocus='on'
+                autoComplete='off'
+                id='city-input'
                 onChange={handleCityChange}
-                className="form-control shadow-sm city-input"
+                className='form-control shadow-sm city-input'
               />
             </div>
-            <div class="col-3">
+            <div className='col-3'>
               <input
-                type="submit"
-                value="Search"
-                className="form-control btn btn-light submitt"
+                type='submit'
+                value='Search'
+                className='form-control btn btn-dark submit'
               />
             </div>
-            <div class="col-1">
+            <div className='col-1'>
               <button
-                type="button"
-                className="btn btn-info button"
-                id="current-location-button"
+                type='button'
+                className='btn btn-info button'
+                id='current-location-button'
               >
-                <span role="img" alt="location">
-                  {" "}
+                <span role='img' alt='location'>
+                  {' '}
                   📍
                 </span>
               </button>
@@ -74,7 +74,7 @@ export default function WeatherApp(props) {
         </form>
 
         <WeatherInfo data={weatherData} />
-        <Forecast coordinates={weatherData.coordinates} />
+        {/* <Forecast coordinates={weatherData.coordinates} /> */}
         <Footer />
       </div>
     );
