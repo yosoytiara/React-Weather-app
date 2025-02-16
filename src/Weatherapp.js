@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import WeatherInfo from './WeatherInfo';
-// import Forecast from "./Forecast";
-// import Footer from './Footer';
 import axios from 'axios';
 
 export default function WeatherApp(props) {

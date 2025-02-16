@@ -32,5 +32,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## 🌍 API Configuration
 
 This widget fetches weather data from OpenWeather API.
-To use your own API key, update src/config.js:
-`export const API_KEY = "your-api-key-here"; `
+To use your own API key, update src/Weatherapp.js:
+`const apiKey = "your-api-key-here";`
