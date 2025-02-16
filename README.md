@@ -2,7 +2,7 @@
 
 A simple, lightweight, and embeddable weather widget built with React. Easily add it to any website using an <iframe> tag.
 
-LIVE:[View Live][https://react-weather-app-widget.vercel.app]
+LIVE:[View Live](https://react-weather-app-widget.vercel.app)
 
 ## Technologies Used
 
