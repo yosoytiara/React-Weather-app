@@ -17,16 +17,18 @@ export default function WeatherInfo(props) {
       <div className='MainTemp'>
         <div className='float-left'>
           <span className='units' id='temps'></span>
-
-          <span className='temp' id='temperature'>
-            <WeatherTemp celsius={props.data.temperature} />
-          </span>
+          <div>
+            <span className='temp' id='temperature'>
+              <WeatherTemp celsius={props.data.temperature} />
+            </span>
+            <p className='desc' id='description'>
+              {props.data.description}
+            </p>
+          </div>
         </div>
-        <p className='desc' id='description'>
-          {props.data.description}
-        </p>
+
         <div className='icons'>
-          <WeatherIcon code={props.data.icon} size={120} />
+          <WeatherIcon code={props.data.icon} size={80} />
         </div>
       </div>
 

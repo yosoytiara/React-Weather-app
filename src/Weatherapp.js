@@ -1,9 +1,8 @@
-import React, { useState } from "react";
-import WeatherInfo from "./WeatherInfo";
+import React, { useState } from 'react';
+import WeatherInfo from './WeatherInfo';
 // import Forecast from "./Forecast";
-import Footer from "./Footer";
-import axios from "axios";
-
+// import Footer from './Footer';
+import axios from 'axios';
 
 export default function WeatherApp(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -31,7 +30,7 @@ export default function WeatherApp(props) {
     setCity(event.target.value);
   }
   function search() {
-    const apiKey = "b262154b2d4d3113da298dca71b99a47";
+    const apiKey = 'b262154b2d4d3113da298dca71b99a47';
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
@@ -58,28 +57,16 @@ export default function WeatherApp(props) {
                 className='form-control btn btn-dark submit'
               />
             </div>
-            <div className='col-1'>
-              <button
-                type='button'
-                className='btn btn-info button'
-                id='current-location-button'
-              >
-                <span role='img' alt='location'>
-                  {' '}
-                  📍
-                </span>
-              </button>
-            </div>
           </div>
         </form>
 
         <WeatherInfo data={weatherData} />
         {/* <Forecast coordinates={weatherData.coordinates} /> */}
-        <Footer />
+        {/* <Footer /> */}
       </div>
     );
   } else {
     search();
-    return "Loading....";
+    return 'Loading....';
   }
 }
